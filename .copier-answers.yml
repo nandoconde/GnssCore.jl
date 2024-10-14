@@ -1,0 +1,13 @@
+# Changes here will be overwritten by Copier
+AnswerStrategy: recommended
+Authors: Fernando <fernando.conde.pumpido@outlook.com>
+CodeOfConductContact: fernando.conde.pumpido@outlook.com
+JuliaIndentation: 4
+JuliaMinVersion: '1.11'
+License: MIT
+LicenseCopyrightHolders: Fernando
+PackageName: GnssCore
+PackageOwner: nandoconde
+PackageUUID: 4da3daa4-46a1-59c4-860e-d76e19b79f6e
+_commit: v0.13.0
+_src_path: https://github.com/abelsiqueira/BestieTemplate.jl

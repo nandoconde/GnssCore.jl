@@ -1,0 +1,7 @@
+name = "GnssCore"
+uuid = "4da3daa4-46a1-59c4-860e-d76e19b79f6e"
+authors = ["Fernando <fernando.conde.pumpido@outlook.com>"]
+version = "0.1.0"
+
+[compat]
+julia = "1.11"
