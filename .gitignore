@@ -1,3 +1,7 @@
+# julia 
 /Manifest.toml
 /docs/Manifest.toml
 /docs/build/
+
+# vs-code
+*.code-workspace
