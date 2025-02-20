@@ -3,34 +3,32 @@ module GnssCore
 # navipedia supertype
 abstract type AbstractNavipedia end
 
-# ADTs supertypes
-abstract type AbstractConstellation end
-abstract type AbstractSignalBand end
-abstract type AbstractSignalComponent end
+# include package code
+include("errors.jl")
+include("signalplan.jl")
+include("properties.jl")
 
-# ADT getters
-"""
-    get_constellations(n::AbstractNavipedia)::Module
+# automatic exports
+#   this does not pollute user namespace because
+#   this package should be used only for package development
+# parent type for navipedia implementations
+export AbstractNavipedia
 
-Retrieve constellation ADT module available in navipedia `n`.
-"""
-get_constellations(::AbstractNavipedia)::Module
+# parent type for ADT/enum implementations
+export AbstractConstellation, AbstractBand, AbstractSignal
 
-"""
-    get_signal_bands(n::AbstractNavipedia)::Module
+# interface functions for ADTs
+export get_constellations, get_bands, get_signals
 
-Retrieve signal bands ADT module available in navipedia `n`.
-"""
-get_signal_bands(::AbstractNavipedia)::Module
+# parent type for implementations of signal properties
+export AbstractSignalProperties
 
-"""
-    get_signal_types(n::AbstractNavipedia)::Module
-
-Retrieve signal component ADT module available in navipedia `n`.
-"""
-get_signal_types(::AbstractNavipedia)::Module
+# minimal interface functions for signal properties
+export get_carrier_frequency, get_modulation
+export is_pilot, is_data
 
 
-# TODO add more generic interfaces
+# public API (> v1.11)
+VERSION >= v"1.11" && include("public.jl")
 
 end
