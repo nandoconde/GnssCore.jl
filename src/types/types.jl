@@ -6,7 +6,7 @@ include("properties.jl")
 
 # navipedia
 export AbstractNavipedia
-export AbstractConstellation, AbstractBand, AbstractSignal
+export AbstractConstellation, AbstractBand, AbstractSignal, AbstractModulation
 
 # properties
 export AbstractSignalProperties

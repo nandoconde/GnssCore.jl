@@ -5,3 +5,4 @@ abstract type AbstractNavipedia end
 abstract type AbstractConstellation end
 abstract type AbstractBand end
 abstract type AbstractSignal end
+abstract type AbstractModulation end
