@@ -1,8 +1,3 @@
-# ADTs supertypes
-abstract type AbstractConstellation end
-abstract type AbstractBand end
-abstract type AbstractSignal end
-
 # ADT getters
 #
 # - get_constellations
