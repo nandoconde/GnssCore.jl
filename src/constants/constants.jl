@@ -17,7 +17,10 @@ module Constants
 # include code
 include("frequencies.jl")
 include("physical.jl")
-include("position.jl")
 include("time.jl")
+include("galileo.jl")
+include("gps.jl")
+
+# TODO check if modules have to be marked as public
 
 end
