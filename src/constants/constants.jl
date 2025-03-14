@@ -9,6 +9,8 @@ It is comprised of modules used as categories for these constants:
     - `Physical`
     - `Position`
     - `Time`
+    - `GPS`
+    - `Galileo`
 
 Check the docstrings in each module to know more.
 """
