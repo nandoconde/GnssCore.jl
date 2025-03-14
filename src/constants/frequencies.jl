@@ -23,20 +23,20 @@ export f_R1, f_R2, f_R3
 const f₀::Float64 = 1.023e6 # Hz
 
 # Galileo
-const f_E1::Float64 = 1575.420e6 # Hz
+const f_E1::Float64 = 1575.42e6 # Hz
 const f_E5::Float64 = 1191.795e6 # Hz
-const f_E5a::Float64 = 1176.450e6 # Hz
-const f_E5b::Float64 = 1207.140e6 # Hz
-const f_E6::Float64 = 1278.750e6 # Hz
+const f_E5a::Float64 = 1176.45e6 # Hz
+const f_E5b::Float64 = 1207.14e6 # Hz
+const f_E6::Float64 = 1278.75e6 # Hz
 
 # GPS
-const f_G1::Float64 = 1575.420e6 # Hz
-const f_G2::Float64 = 1227.600e6 # Hz
-const f_G5::Float64 = 1176.450e6 # Hz
+const f_G1::Float64 = 1575.42e6 # Hz
+const f_G2::Float64 = 1227.6e6 # Hz
+const f_G5::Float64 = 1176.45e6 # Hz
 
 # GLONASS
 const f_R1::Float64 = 1600.995e6 # Hz
-const f_R2::Float64 = 1248.060e6 # Hz
+const f_R2::Float64 = 1248.06e6 # Hz
 const f_R3::Float64 = 1202.025e6 # Hz
 
 end

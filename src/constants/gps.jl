@@ -16,5 +16,5 @@ const GPS_MAX_SVID::Int64 = 36
 
 "Maximum PRN number available in GPS."
 const GPS_MAX_PRN::Int64 = 50
-    
+
 end

@@ -9,5 +9,5 @@ struct InterfaceError <: Exception
 end
 
 function Base.showerror(io::IO, e::InterfaceError)
-    print(io, "InterfaceError: no method `", e.f, "` is implemented for type `", e.t, "`")
+    return print(io, "InterfaceError: no method `", e.f, "` is implemented for type `", e.t, "`")
 end

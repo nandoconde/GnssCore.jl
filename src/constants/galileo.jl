@@ -16,5 +16,5 @@ const GAL_MAX_SVID::Int64 = 36
 
 "Maximum PRN number available in Galileo."
 const GAL_MAX_PRN::Int64 = 50
-    
+
 end

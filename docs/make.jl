@@ -3,7 +3,7 @@ using Changelog
 using Documenter
 using Documenter.Remotes: GitHub
 
-DocMeta.setdocmeta!(GnssCore, :DocTestSetup, :(using GnssCore); recursive=true)
+DocMeta.setdocmeta!(GnssCore, :DocTestSetup, :(using GnssCore); recursive = true)
 
 # generate release notes
 Changelog.generate(
@@ -15,9 +15,9 @@ Changelog.generate(
 
 # generate documentation
 makedocs(;
-    modules=[GnssCore],
-    authors="Fernando Conde-Pumpido",
-    sitename="GnssCore.jl",
+    modules = [GnssCore],
+    authors = "Fernando Conde-Pumpido",
+    sitename = "GnssCore.jl",
     repo = GitHub("nandoconde", "GnssCore.jl"),
     format = Documenter.HTML(;
         prettyurls = !("local" in ARGS),
@@ -26,18 +26,18 @@ makedocs(;
         highlights = ["yaml", "toml"],
         ansicolor = true,
         size_threshold_ignore = ["release-notes.md"],
-        ),
+    ),
     linkcheck = true,
     doctest = :true,
     build = "build",
-    pages=[
+    pages = [
         # TODO
         "Home" => "index.md",
     ],
 )
 
 deploydocs(;
-    repo="github.com/nandoconde/GnssCore.jl.git",
+    repo = "github.com/nandoconde/GnssCore.jl.git",
     target = "build",
     push_preview = true,
 )
