@@ -1,7 +1,14 @@
 # julia 
-/Manifest.toml
-/docs/Manifest.toml
-/docs/build/
+*.jl.*.cov
+*.jl.cov
+*.jl.mem
+*.rej
+.DS_Store
+.benchmarkci
+Manifest*.toml
+benchmark/*.json
+coverage
+docs/build/
 
 # vs-code
 *.code-workspace

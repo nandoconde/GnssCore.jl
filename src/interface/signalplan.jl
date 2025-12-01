@@ -1,37 +1,41 @@
-# ADT getters
-#
-# - get_constellations
-# - get_bands
-# - get_signals
-"""
-    get_constellations(n::AbstractNavipedia)::Module
+# SPDX-License-Identifier: GMV-AD
 
-Retrieve constellation ADT module available in navipedia `n`.
+"""
+    get_constellations(n)
+
+Retrieve NTuple with constellations available in Navipedia `n`.
 """
 function get_constellations end
-
 function get_constellations(n::AbstractNavipedia)
-    throw(InterfaceError(get_constellations, typeof(n)))
+    throw(ErrorException("`get_constellations` not implemented"))
 end
 
 """
-    get_bands(n::AbstractNavipedia)::Module
+    get_bands(n)
 
-Retrieve frequency bands ADT module available in navipedia `n`.
+Retrieve NTuple with frequency bands available in Navipedia `n`.
 """
 function get_bands end
-
 function get_bands(n::AbstractNavipedia)
-    throw(InterfaceError(get_bands, typeof(n)))
+    throw(ErrorException("`get_bands` not implemented"))
 end
 
 """
-    get_signals(n::AbstractNavipedia)::Module
+    get_signals(n)
 
-Retrieve signal component ADT module available in navipedia `n`.
+Retrieve NTuple with signals available in Navipedia `n`.
 """
 function get_signals end
-
 function get_signals(n::AbstractNavipedia)
-    throw(InterfaceError(get_signals, typeof(n)))
+    throw(ErrorException("`get_signals` not implemented"))
+end
+
+"""
+    get_navdata(n)
+
+Retrieve NTuple with navigation data available in Navipedia `n`.
+"""
+function get_navdatas end
+function get_navdatas(n::AbstractNavipedia)
+    throw(ErrorException("`get_navdatas` not implemented"))
 end

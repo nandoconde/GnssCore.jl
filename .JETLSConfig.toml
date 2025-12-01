@@ -1,0 +1,5 @@
+# format code with Runic.jl
+formatter = "runic"
+
+[diagnostic]
+enabled = true
